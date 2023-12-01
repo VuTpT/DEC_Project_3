@@ -1,6 +1,7 @@
 #!/bin/sh
+# Remove all files in the folder resource
 find resource/*.csv -type f -delete 
-
+# Downloading resources from URL
 wget -O resource/data.csv https://raw.githubusercontent.com/yinghaoz1/tmdb-movie-dataset-analysis/master/tmdb-movies.csv 
 
 # 1. Sort movies by release date in descending order and save to a new file
